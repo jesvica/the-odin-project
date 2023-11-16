@@ -1,0 +1,17 @@
+* {
+    background-color: #b7b4b4;
+}
+
+h1, li {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style: none;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
