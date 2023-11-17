@@ -7,6 +7,10 @@ h1, li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ul {
+    margin: 0 auto;
+}
+
 li {
     list-style: none;
     color: #000;
