@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* --------------- Header and nav styling --------------- */
+header {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    
+}
+
+nav {
+    width: 70%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    margin-right: 20px;
+}
+
+
+
+/* --------------- Section styling --------------- */
+section {
+    padding: 30px;
+    margin: 70px 0;
+}
+
+main {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+   width: 35%;
+}
+
+main section p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+
+img {
+    height: 250px;
+    width: auto;
+}
+
+button {
+    color: #fff;
+    background-color: #3882f6;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+
+
+/* --------------- Images with info section --------------- */
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 30px 0;
+    color: #1f2937;
+}
+
+.images-with-info {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.images-with-info ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    width: 17.5%;
+}
+
+.images-with-info img {
+    width: 175px;
+    height: auto;
+    border: 5px solid #3883f6;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+/* --------------- Quote section --------------- */
+.quote {
+    background-color: #E5E7EB;
+}
+
+
+
+/* --------------- Footer --------------- */
+footer {
+    background-color: #1f2937;
+}
+
+footer p {
+    color: #E5E7EB;
+    text-align: center;
+    padding: 30px 0;
+}
