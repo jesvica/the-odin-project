@@ -4,6 +4,11 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
+/* layout */
+.hero-section section, .images-with-info, .quote, .call-to-action {
+    padding: 30px;
+    margin: 70px 0;
+}
 
 
 /* --------------- Header and nav styling --------------- */
@@ -47,7 +52,7 @@ nav ul li a {
 }
 
 /* --------------- Section styling --------------- */
-section {
+.hero-section section {
     padding: 30px;
     margin: 70px 0;
 }
@@ -80,7 +85,7 @@ img {
     width: auto;
 }
 
-button {
+.top-sign-up-button {
     color: #fff;
     background-color: #3882f6;
     border: none;
@@ -148,6 +153,7 @@ li {
     color: #1F2937;
     font-style: italic;
     font-weight: lighter;
+    text-align: center;
 }
 
 section cite {
@@ -161,6 +167,32 @@ section cite {
 
 
 
+/* --------------- Call to action --------------- */
+.action-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3883f6;
+    color: white;
+    align-items: center;
+    padding: 40px 0;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.action-text {
+    
+} 
+
+.bottom-sign-up-button {
+    color: #fff;
+    background-color: #3882f6;
+    border: 1px solid white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 /* --------------- Footer --------------- */
 footer {
     background-color: #1f2937;
@@ -171,3 +203,4 @@ footer p {
     text-align: center;
     padding: 30px 0;
 }
+
