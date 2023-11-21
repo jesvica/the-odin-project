@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 
@@ -8,34 +9,42 @@
 /* --------------- Header and nav styling --------------- */
 header {
     background-color: #1f2937;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    margin: 0 13%;
+    padding: 10px 0;
+    align-items: center;
 }
 
 .header-logo {
     color: #F9FAF8;
     font-size: 24px;
-    
 }
 
 nav {
-    width: 70%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     font-size: 18px;
+}
+
+nav ul li {
+    width: 30%;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #e5e7eb;
-    margin-right: 20px;
 }
-
-
 
 /* --------------- Section styling --------------- */
 section {
@@ -48,6 +57,7 @@ main {
     color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 main section {
@@ -59,6 +69,11 @@ main section p {
     color: #e5e7eb;
 }
 
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 img {
     height: 250px;
@@ -95,13 +110,11 @@ h2 {
 
 .images-with-info {
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .images-with-info ul {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 li {
@@ -121,6 +134,29 @@ li {
 /* --------------- Quote section --------------- */
 .quote {
     background-color: #E5E7EB;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.quote blockquote {
+    width: 70%;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+section cite {
+    display: flex;
+    justify-content: end;
+    font-size: 28px;
+    color: #1f2937;
+    font-weight: bold;
+    margin-right: 25%;
 }
 
 
