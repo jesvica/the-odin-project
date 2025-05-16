@@ -1,0 +1,18 @@
+.red-background {
+    background-color: #d87093;
+    font-family: sans-serif;
+}
+
+#blue-bold {
+    color: #0000ff;
+    font-size: 50px;
+}
+
+#green-background {
+    background-color: #adff2f;
+    font-weight: bold;
+}
+
+.bigger-font {
+    font-size: 30px;
+}
