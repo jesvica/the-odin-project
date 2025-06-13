@@ -46,3 +46,28 @@ a {
 ul {
   list-style-type: none;
 }
+ 
+
+/****** Code I've added *******/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.logo-links {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.button-image-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
