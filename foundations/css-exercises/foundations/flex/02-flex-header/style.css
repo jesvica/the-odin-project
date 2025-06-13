@@ -17,8 +17,6 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
-  display: flex;
-  padding: 0 10px;
 }
 
 a {
@@ -29,10 +27,8 @@ a {
   text-decoration: none;
 }
 
-.left-links ul {
-  gap: 10px;
-}
-
-.right-links ul {
+ul {
+  display: flex;
+  padding: 0 10px;
   gap: 10px;
 }
