@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header, main {
+    background-color: #1F2937;
+}
+
+header, main {
+    padding: 0 15%;
+}
+
+/* ------- Header styling --------- */
+header {
+    color: #E5E7EB;
+}
+
+header a {
+    text-decoration: none;
+    color: #E5E7EB;
+    list-style: none;
+}
+
+header ul li {
+    list-style: none;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav p {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* Layout */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------- Main styling -------- */
+main {
+    display: flex;
+    align-items: center;
+}
+
+main section {
+    width: 50%;
+    color: #F9FAF8;
+    margin: 80px 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+main button {
+    background-color: #3882F6;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+#placeholder {
+    height: 300px;
+    width: 500px;
+    background-color: grey;
+    text-align: center;
+}
