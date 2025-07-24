@@ -126,11 +126,9 @@ h2 {
 
 /* ------ Quote section ------*/
 .quote-section {
-    height: 300px;
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
- 
 }
 
 .quote {
@@ -153,3 +151,53 @@ blockquote {
 }
 
 /* ----- Call to action ------*/
+.action-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    width: 70%;
+    height: 150px;
+    padding: 30px 60px;
+}
+
+.action-call div {
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.action-call h4 {
+    font-size: 1.1rem;
+}
+
+.action-call p {
+    font-weight: lighter;
+}
+
+.action-section button {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #3882F6;
+    cursor: pointer;
+}
+
+#action-sign-up {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+
+
+
+/* ----- Footer ------*/
