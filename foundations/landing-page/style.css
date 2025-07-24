@@ -46,7 +46,6 @@ nav ul {
     font-size: 18px;
 }
 
-/* ------ Layout ------ */
 nav {
     display: flex;
     justify-content: space-between;
@@ -71,12 +70,14 @@ h1 {
 
 main button {
     background-color: #3882F6;
-    height: 35px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
     border: none;
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 #placeholder {
@@ -188,6 +189,8 @@ blockquote {
     border-radius: 10px;
     background-color: #3882F6;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 #action-sign-up {
@@ -198,6 +201,15 @@ blockquote {
 }
 
 
-
-
 /* ----- Footer ------*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    height: 80px;
+}
+
+footer div {
+    align-content: center;
+}
