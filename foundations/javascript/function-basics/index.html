@@ -17,7 +17,18 @@
         }
         console.log(multiply(3,4));
 
-        
+        function capitalize(word) {
+            word = word.toLowerCase();
+            
+            letter = word.split("");
+
+            letter[0] = letter[0].toUpperCase();
+           
+            word = letter.join('');
+
+            return word;
+        }
+        console.log(capitalize("hElLo"));
     </script>
 
 </body>
