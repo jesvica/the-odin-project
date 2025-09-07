@@ -27,7 +27,26 @@ function sortArray(arr) {
     return arr.reverse();
 }
 
-
-
-
 console.log(sortArray(arr));
+
+//Copy and sort array
+let arr1 = ["HTML", "JavaScript", "CSS"];
+
+function copySorted(arr1) {
+    return arr1.toSorted();
+}
+console.log(copySorted(arr1))
+
+//Shuffle an array
+let arr2 = [1,2,3]
+
+function shuffleArray(arr2) {
+    for (let j = arr2.length - 1; j > 0; j--) {
+        const k = Math.floor(Math.random() * (j + 1));
+        [arr2[j], arr2[k]] = [arr2[k], arr2[j]]
+    }
+    return arr2;
+}
+
+console.log(shuffleArray(arr2))
+
