@@ -50,3 +50,19 @@ function shuffleArray(arr2) {
 
 console.log(shuffleArray(arr2))
 
+//Filter unique array members
+function unique(arr3) {
+  result = [];
+   for (let item of arr3) {
+    if (!result.includes(item)) {
+        result.push(item);
+    }
+   }
+   return result;
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+console.log(unique(strings))
