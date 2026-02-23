@@ -29,3 +29,15 @@ innerContainer.appendChild(innerPara);
 
 // Append the div to the webpage
 container.appendChild(innerContainer);
+
+// btn.addEventListener("click", function (e) {
+//   console.log(e.target);
+// });
+
+btn.addEventListener("click", function (e) {
+  console.log(e);
+});
+
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
