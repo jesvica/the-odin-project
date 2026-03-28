@@ -28,9 +28,30 @@ function getComputerChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
+// Check if the game is over and a winner has been declared
+function checkGameOver() {
+
+    if (humanScore >= 5 || computerScore >= 5) {
+            rockButton.disabled = true;
+            paperButton.disabled = true;
+            scissorsButton.disabled = true;
+        
+
+        if (humanScore >= 5) {
+                displayRoundWinner.innerText = "";
+                displayOverallWinner.innerText = "Human wins!"
+            } else if (computerScore >= 5) {
+                displayRoundWinner.innerText = "";
+                displayOverallWinner.innerText = "Computer wins!"
+            }
+    }
+}
+
+// Play a round of rock paper scissors
 function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.toLowerCase();
 
+        
         if (humanChoice === computerChoice) {
             displayRoundWinner.innerText = "It's a tie!"
         } else if ( 
@@ -48,31 +69,36 @@ function playRound(humanChoice, computerChoice) {
         //Log the score to the console
         displayScore.innerText = `Score: Human ${humanScore} - Computer ${computerScore}`;
 
-        if (humanScore === 5) {
-            displayOverallWinner.innerText = "Human wins!"
-        } else if (computerScore === 5) {
-            displayOverallWinner.innerText = "Computer wins!"
-        }
+        // Check if the game is over
+        checkGameOver();
 }
 
+// Assign buttons
 let rockButton = document.getElementById('rock');
 let paperButton = document.getElementById('paper');
 let scissorsButton = document.getElementById('scissors')
 
+// Human picks rock
 rockButton.addEventListener('click', playRock);
 function playRock() {
+    if (humanScore >= 5 || computerScore >= 5) return;
     playRound('rock', getComputerChoice());
 };
 
+// Human picks paper
 paperButton.addEventListener('click', playPaper);
 function playPaper() {
+    if (humanScore >= 5 || computerScore >= 5) return;
     playRound('paper', getComputerChoice());
 }
 
+// Human picks scissors
 scissorsButton.addEventListener('click', playScissors);
 function playScissors() {
+    if (humanScore >= 5 || computerScore >= 5) return;
     playRound('scissors', getComputerChoice());
 }
+
 
 // Reset the scores and restart the game
 let resetScores = document.getElementById('restart')
@@ -81,4 +107,12 @@ resetScores.addEventListener('click', clearScore);
 function clearScore() {
     humanScore = 0;
     computerScore = 0;
+
+    displayRoundWinner.innerText = "";
+    displayScore.innerText = "";
+    displayOverallWinner.innerText = "";
+
+    rockButton.disabled = false;
+    paperButton.disabled = false;
+    scissorsButton.disabled = false;
 }
