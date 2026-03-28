@@ -78,26 +78,38 @@ let rockButton = document.getElementById('rock');
 let paperButton = document.getElementById('paper');
 let scissorsButton = document.getElementById('scissors')
 
-// Human picks rock
-rockButton.addEventListener('click', playRock);
-function playRock() {
-    if (humanScore >= 5 || computerScore >= 5) return;
-    playRound('rock', getComputerChoice());
-};
+// Pass the human choice into playRound
+rockButton.addEventListener('click', () => handleChoice('rock'));
+paperButton.addEventListener('click', () => handleChoice('paper'));
+scissorsButton.addEventListener('click', () => handleChoice('scissors'));
 
-// Human picks paper
-paperButton.addEventListener('click', playPaper);
-function playPaper() {
+function handleChoice(choice) {
     if (humanScore >= 5 || computerScore >= 5) return;
-    playRound('paper', getComputerChoice());
+
+    playRound(choice, getComputerChoice());
 }
 
-// Human picks scissors
-scissorsButton.addEventListener('click', playScissors);
-function playScissors() {
-    if (humanScore >= 5 || computerScore >= 5) return;
-    playRound('scissors', getComputerChoice());
-}
+
+// // Human picks rock
+// rockButton.addEventListener('click', playRock);
+// function playRock() {
+//     if (humanScore >= 5 || computerScore >= 5) return;
+//     playRound('rock', getComputerChoice());
+// };
+
+// // Human picks paper
+// paperButton.addEventListener('click', playPaper);
+// function playPaper() {
+//     if (humanScore >= 5 || computerScore >= 5) return;
+//     playRound('paper', getComputerChoice());
+// }
+
+// // Human picks scissors
+// scissorsButton.addEventListener('click', playScissors);
+// function playScissors() {
+//     if (humanScore >= 5 || computerScore >= 5) return;
+//     playRound('scissors', getComputerChoice());
+// }
 
 
 // Reset the scores and restart the game
