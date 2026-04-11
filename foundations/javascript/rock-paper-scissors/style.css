@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Nanum+Myeongjo&display=swap');
+
+/* Main styling */
+/* html {
+    min-height: 100vh;
+    background-image: url('images/wallpaper.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+/*----- Heading styling -----*/
+h1 {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+}
+
+/*----- Subheading styling -----*/
+h3 {
+    text-align: center;
+    font-family: "Google Sans Flex", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/*----- Button styling -----*/
+#button-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#button-container {
+    display: flex;
+    gap: 7rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: transform .2s; /* Animation */
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button img {
+    height: 20rem;
+    width: auto;
+}
+
+/*----- Round winner & score section -----*/
+#round-winner, #comp-score, #human-score {
+    text-align: center;
+    font-family: "Google Sans Flex", sans-serif;
+    font-weight: 450;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+
+/* #comp-score, #human-score {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 600;
+} */
+
+#score-section {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+/*----- Overall winner & restart game section -----*/
+#overall-winner {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+#restart-section {
+    display: flex;
+    justify-content: center;
+}
+
+#restart {
+    background-color: transparent;
+    border: none;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/*----- Game over modal -----*/
+.hidden {
+    display: none !important;
+}
+
+#game-over-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 4rem 6rem;
+    text-align: center;
+}
