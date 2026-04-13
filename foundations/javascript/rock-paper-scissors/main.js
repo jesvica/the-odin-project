@@ -1,3 +1,19 @@
+// Rules modal
+let rulesModal = document.getElementById('rules-modal');
+let rulesButton = document.getElementById('rules-button');
+
+rulesButton.addEventListener('click', displayRules);
+function displayRules() {
+    rulesModal.classList.remove('hidden');
+}
+
+let closeModal = document.getElementById('close-modal');
+
+closeModal.addEventListener('click', close);
+function close() {
+    rulesModal.classList.add('hidden');
+}
+
 // Display who won the round or if it's a tie
 let displayRoundWinner = document.getElementById('round-winner')
 
@@ -8,8 +24,10 @@ let displayHumanScore = document.getElementById('human-score')
 // Display the overall winner in the DOM
 let displayOverallWinner = document.getElementById('overall-winner');
 
+// Game over modal
 let modal = document.getElementById('game-over-modal');
 let modalImage = document.getElementById('modal-image');
+
 
 // Getting the computer choice of rock, paper or scissors
 function getComputerChoice() {
