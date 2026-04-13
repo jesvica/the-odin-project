@@ -2,17 +2,22 @@
 let rulesModal = document.getElementById('rules-modal');
 let rulesButton = document.getElementById('rules-button');
 
+
+// Display the rules when button clicked
 rulesButton.addEventListener('click', displayRules);
 function displayRules() {
     rulesModal.classList.remove('hidden');
 }
 
+
+// Close the rules modal
 let closeModal = document.getElementById('close-modal');
 
 closeModal.addEventListener('click', close);
 function close() {
     rulesModal.classList.add('hidden');
 }
+
 
 // Display who won the round or if it's a tie
 let displayRoundWinner = document.getElementById('round-winner')
@@ -49,6 +54,7 @@ function getComputerChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
+
 // Check if the game is over and a winner has been declared
 function checkGameOver() {
 
@@ -71,7 +77,6 @@ function checkGameOver() {
         modal.classList.remove('hidden');
     } 
 }
-
 
 
 
@@ -102,10 +107,12 @@ function playRound(humanChoice, computerChoice) {
         checkGameOver();
 }
 
+
 // Assign buttons
 let rockButton = document.getElementById('rock');
 let paperButton = document.getElementById('paper');
 let scissorsButton = document.getElementById('scissors')
+
 
 // Pass the human choice into playRound
 rockButton.addEventListener('click', () => handleChoice('rock'));
@@ -117,28 +124,6 @@ function handleChoice(choice) {
 
     playRound(choice, getComputerChoice());
 }
-
-
-// // Human picks rock
-// rockButton.addEventListener('click', playRock);
-// function playRock() {
-//     if (humanScore >= 5 || computerScore >= 5) return;
-//     playRound('rock', getComputerChoice());
-// };
-
-// // Human picks paper
-// paperButton.addEventListener('click', playPaper);
-// function playPaper() {
-//     if (humanScore >= 5 || computerScore >= 5) return;
-//     playRound('paper', getComputerChoice());
-// }
-
-// // Human picks scissors
-// scissorsButton.addEventListener('click', playScissors);
-// function playScissors() {
-//     if (humanScore >= 5 || computerScore >= 5) return;
-//     playRound('scissors', getComputerChoice());
-// }
 
 
 // Reset the scores and restart the game

@@ -8,6 +8,8 @@
     background-repeat: no-repeat;
     background-position: center;
 } */
+
+
 /*----- Nav styling -----*/
 nav {
     /* display: flex;
@@ -22,6 +24,7 @@ nav button { /* Rules button */
     margin-right: 20px;
     letter-spacing: 2px;
 }
+
 
 /*----- Rules modal -----*/
 .hidden {
@@ -58,6 +61,7 @@ nav button { /* Rules button */
     text-align: center;
 }
 
+
 /*----- Heading styling -----*/
 h1 {
     font-family: "Nanum Myeongjo", serif;
@@ -68,6 +72,7 @@ h1 {
     margin: 16px 0 32px 0;
 }
 
+
 /*----- Subheading styling - Choose your move -----*/
 h3 {
     text-align: center;
@@ -76,6 +81,7 @@ h3 {
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
+
 
 /*----- Button styling - Rock paper scissors images -----*/
 #button-section {
@@ -105,6 +111,7 @@ button img {
     height: 20rem;
     width: auto;
 }
+
 
 /*----- Round winner & score section -----*/
 #round-winner {
@@ -152,6 +159,7 @@ button img {
     font-size: 1.1rem;
     letter-spacing: 2px;
 }
+
 
 /*----- Game over modal -----*/
 .hidden {
