@@ -77,8 +77,8 @@ function playRound(humanChoice, computerChoice) {
             displayRoundWinner.innerText = `Skeleton picked ${computerChoice}. Human picked ${humanChoice}.\n Skeleton wins!`
         }
         //Log the score to the console
-        displayHumanScore.innerText = `Human\n ${humanScore}`;
-        displayCompScore.innerText = `Skeleton\n ${computerScore}`;
+        displayHumanScore.innerText = `HUMAN\n ${humanScore}`;
+        displayCompScore.innerText = `SKELETON\n ${computerScore}`;
 
         // Check if the game is over
         checkGameOver();
