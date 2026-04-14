@@ -99,12 +99,17 @@ button {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s, opacity .2s; /* Animation */
 }
 
 button:hover {
     transform: scale(1.2);
-    font-weight: 600;    
+    /* font-weight: 600;     */
+}
+
+button:active img {
+    opacity: 0.6;
+    transform: scale(0.95);
 }
 
 button img {
